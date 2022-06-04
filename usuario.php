@@ -1,6 +1,13 @@
 <?php
 
 $email = 'ana@alura.com.br';
+$senha = 'kafsjdfkahdjkfas';
+
+echo strlen($senha) . PHP_EOL;
+
+if (strlen($senha) < 8) {
+    echo 'Senha insergura' . PHP_EOL;
+}
 
 $posicaoDoArroba = strpos($email, '@');
 
