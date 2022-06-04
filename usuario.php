@@ -2,5 +2,7 @@
 
 $email = 'ana@alura.com.br';
 
-echo substr($email, 0, 8) . PHP_EOL;
-echo substr($email, 9) . PHP_EOL;
+$posicaoDoArroba = strpos($email, '@');
+
+echo substr($email, 0, $posicaoDoArroba) . PHP_EOL;
+echo substr($email, $posicaoDoArroba + 1) . PHP_EOL;
