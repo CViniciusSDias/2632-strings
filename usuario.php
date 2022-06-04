@@ -1,7 +1,7 @@
 <?php
 
 $nome = 'Vinícius Dias';
-$email = 'vinícius@alura.com.br';
+$email = ' vinícius@alura.com.br ';
 $senha = 'áéíóú';
 
 echo mb_strlen($senha) . PHP_EOL;
@@ -24,3 +24,5 @@ echo 'Sobrenome: ' . $sobrenome . PHP_EOL;
 
 $csv = 'Vinicius Dias,24,vinicius@alura.com.br';
 var_dump(explode(',', $csv));
+
+echo trim($email) . PHP_EOL;
